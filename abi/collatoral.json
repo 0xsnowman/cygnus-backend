@@ -1,0 +1,35 @@
+[
+  { "inputs": [], "name": "ReentrantCall", "type": "error" },
+  {
+    "inputs": [],
+    "name": "COLLATERAL_INIT_CODE_HASH",
+    "outputs": [{ "internalType": "bytes32", "name": "", "type": "bytes32" }],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "collateralParameters",
+    "outputs": [
+      { "internalType": "address", "name": "factory", "type": "address" },
+      { "internalType": "address", "name": "underlying", "type": "address" },
+      { "internalType": "address", "name": "cygnusDai", "type": "address" },
+      { "internalType": "uint256", "name": "shuttleId", "type": "uint256" }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      { "internalType": "address", "name": "underlying", "type": "address" },
+      { "internalType": "address", "name": "cygnusDai", "type": "address" },
+      { "internalType": "uint256", "name": "shuttleId", "type": "uint256" }
+    ],
+    "name": "deployDeneb",
+    "outputs": [
+      { "internalType": "address", "name": "collateral", "type": "address" }
+    ],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  }
+]

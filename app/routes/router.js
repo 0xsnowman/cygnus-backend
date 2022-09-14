@@ -9,7 +9,7 @@ const routerContractABI = require("../../abi/router.json");
 const routerContract = new Contract(CYGNUS_ROUTER_CONTRACT_ADDRESS, routerContractABI, provider);
 
 router.get('/native-token', async (req, res) => {
-    console.log("Getting native token...");
+    console.log("Getting native token from router...");
 
     const time = new Date();
     const nativeToken = await routerContract.nativeToken();
